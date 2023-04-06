@@ -1,0 +1,9 @@
+.frst
+{
+    color : red;
+}
+.frst:hover
+{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
