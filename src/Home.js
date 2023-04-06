@@ -7,6 +7,7 @@ function Home() {
         <h1 className='frst'>this is react</h1>
         <h2 style={{color:'greenyellow'}}>this a paragraph line</h2>
         <p>sadfdfad safsfasdf saf saf asf safasf sf afasf sa sfsaf saf asf cxxfdfsdgdgdg dgdsgs</p>
+        <h1>sdf</h1>
     </Fragment>
   )
 }
