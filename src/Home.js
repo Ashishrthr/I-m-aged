@@ -9,6 +9,7 @@ function Home() {
         <p>sadfdfad safsfasdf saf saf asf safasf sf afasf sa sfsaf saf asf cxxfdfsdgdgdg dgdsgs</p>
         <h1>sdf</h1>
         <h4>ashish rathor</h4>
+        <p className='text-primary'>this is from mac</p>
     </Fragment>
   )
 }
