@@ -1,9 +1,13 @@
 .frst
 {
-    color : red;
+    color : var(--bs-cyan);
 }
 .frst:hover
 {
     opacity: 0;
     transition: opacity 1s ease;
+}
+.nav-toglebtn-shadow:focus
+{
+    box-shadow: 0px 0px 0px 1px green, 0px 1px 0px 0px green !important;
 }
