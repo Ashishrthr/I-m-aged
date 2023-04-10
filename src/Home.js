@@ -34,7 +34,7 @@ function Home() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">My Account</a>
               </li>
             </ul>
             <form className="d-flex">
@@ -48,24 +48,25 @@ function Home() {
               {/* <!-- Modal --> */}
               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
+                  <div class="modal-content bg-warning">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title text-success" id="staticBackdropLabel">Login</h5>
+                      <button type="button" class="btn-close text-success" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       {/* log in form */}
                       <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                        <div class="mb-3 ">
+                          <label for="exampleInputEmail1" class="form-label text-success">Email address</label>
+                          <input type="email" class="form-control bg1" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1"/>
+                          <label for="exampleInputPassword1" class="form-label text-success">Password</label>
+                          <input type="password" class="form-control bg1 text-white" id="exampleInputPassword1"/>
                         </div>
-                        
+                        <a className='regist'>Create New Account</a>
+
                         {/* <div class="mb-3 form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -73,7 +74,7 @@ function Home() {
                         {/* <button type="submit" class="btn btn-primary float-end">login</button> */}
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-outline-success">Login</button>
+                      <button type="button" class="btn btn-success">Login</button>
                     </div>
                       </form>
                     </div>

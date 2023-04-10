@@ -21,3 +21,17 @@
 {
     color:#19971b;
 }
+.bg1
+{
+    background-color: #6c757d !important;
+    color: #c6c6c6 !important;
+}
+.regist{
+    text-decoration: none;
+    color: #7b7777;
+    cursor: pointer;
+}
+.regist:hover ,.regist:focus
+{
+    color: green;
+}
