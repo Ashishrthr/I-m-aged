@@ -11,3 +11,13 @@
 {
     box-shadow: 0px 0px 0px 1px green, 0px 1px 0px 0px green !important;
 }
+.homeicn
+{
+    font-size: 30px;
+    
+    
+}
+.homeicn:hover
+{
+    color:#19971b;
+}
