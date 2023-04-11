@@ -10,7 +10,7 @@ function Home() {
     <Fragment>
       <nav className="navbar navbar-expand-lg navbar-dark bg-warning">
         <div className="container-fluid">
-          <a className="navbar-brand text-decoration-none lh-1 ms-3 me-5 my-0 px-0 pt-0 fs-3" href="#"><span className='homeicn'><GiArchaeopteryxFossil /></span></a>
+          <a className="navbar-brand text-decoration-none lh-1 ms-3 me-5 my-0 px-0 pt-0 fs-3" to="#"><span className='homeicn'><GiArchaeopteryxFossil /></span></a>
           <button className="navbar-toggler nav-toglebtn-shadow bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
