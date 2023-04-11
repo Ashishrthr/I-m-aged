@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import './style.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
-import { AiFillApple,GiArchaeopteryxFossil } from "react-icons/gi";
+import { AiFillApple, GiArchaeopteryxFossil } from "react-icons/gi";
 
 
 function Home() {
@@ -10,11 +10,11 @@ function Home() {
     <Fragment>
       <nav className="navbar navbar-expand-lg navbar-dark bg-warning">
         <div className="container-fluid">
- 
-    
+
+
 
           <a className="navbar-brand text-decoration-none lh-1 ms-3 me-5 my-0 px-0 pt-0 fs-3" to="#"><span className='homeicn'><GiArchaeopteryxFossil /></span></a>
-         <button className="navbar-toggler nav-toglebtn-shadow bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler nav-toglebtn-shadow bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -63,12 +63,12 @@ function Home() {
                       <form>
                         <div class="mb-3 ">
                           <label for="exampleInputEmail1" class="form-label text-success">Email address</label>
-                          <input type="email" class="form-control bg1" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          <input type="email" class="form-control bg1" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label text-success">Password</label>
-                          <input type="password" class="form-control bg1 text-white" id="exampleInputPassword1"/>
+                          <input type="password" class="form-control bg1 text-white" id="exampleInputPassword1" />
                         </div>
                         <a className='regist'>Create New Account</a>
 
@@ -77,10 +77,10 @@ function Home() {
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div> */}
                         {/* <button type="submit" class="btn btn-primary float-end">login</button> */}
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-success">Login</button>
-                    </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Login</button>
+                        </div>
                       </form>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ function Home() {
       </nav>
 
 
-      <h1>ashsishssh</h1>
+    
       {/* end of navbar */}
 
 
