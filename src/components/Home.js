@@ -6,6 +6,7 @@ import { GiArchaeopteryxFossil } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 
 
+
 function Home() {
   return (
     <Fragment>
@@ -13,14 +14,14 @@ function Home() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-warning">
         <div className="container-fluid">
           
-          <Link className="navbar-brand text-decoration-none lh-1 ms-3 me-5 my-0 px-0 pt-0 fs-3" to="#"><span className='homeicn'><GiArchaeopteryxFossil /></span></Link>
+          <Link className="navbar-brand text-decoration-none lh-1 ms-3 me-5 my-0 px-0 pt-0 fs-3" to=""><span className='homeicn'><GiArchaeopteryxFossil /></span></Link>
           <button className="navbar-toggler nav-toglebtn-shadow bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item ">
-                <Link className="nav-link active" aria-current="page" to="home">Home</Link>
+                <Link className="nav-link active" aria-current="page" to="">Home</Link>
               </li>
               <li className="nav-item ">
                 <Link className="nav-link text-success" to="#">Link</Link>
@@ -37,7 +38,7 @@ function Home() {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link disabled" to="#" tabindex="-1" aria-disabled="true">Disabled</Link>
+                <Link className="nav-link disabled" to="#" tabindex="-1" aria-disabled="true">My Account</Link>
               </li>
             </ul>
             <form className="d-flex">
@@ -59,7 +60,7 @@ function Home() {
                       <button type="button" class="btn-close text-success" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      {/* log in form */}
+                      {/* log in form*/} 
                       <form>
                         <div class="mb-3 ">
                           <label for="exampleInputEmail1" class="form-label text-success">Email address</label>
@@ -70,13 +71,7 @@ function Home() {
                           <label for="exampleInputPassword1" class="form-label text-success">Password</label>
                           <input type="password" class="form-control bg1 text-white" id="exampleInputPassword1" />
                         </div>
-                        <Link className='regist'>Create New Account</Link>
-
-                        {/* <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div> */}
-                        {/* <button type="submit" class="btn btn-primary float-end">login</button> */}
+                        <Link className='regist' to="CreateAccount">Create New Account</Link>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                           <button type="button" class="btn btn-success">Login</button>
