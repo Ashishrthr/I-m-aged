@@ -6,6 +6,8 @@ import Errorpage from './components/Errorpage';
 import Createacc from './components/Createacc';
 import Nav from "./components/Nav"
 import Login from './components/Login';
+import Datalist from './components/Datalist';
+import Axiosapi from './components/Axiosapi';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +19,9 @@ root.render(
       <Route path='*' element = { <Errorpage/> } />
       <Route path='CreateNewAccount' element = {<Createacc/>} />
       <Route path='login' element = {<Login/>} />
+      <Route path='datalist' element = {<Datalist/>}/>
+      <Route path='apidata' element = {<Axiosapi/>}/>
+
 
     </Routes>
     </BrowserRouter>

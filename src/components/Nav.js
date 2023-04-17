@@ -21,12 +21,15 @@ function Nav() {
               <li className="nav-item">
                 <Link className="nav-link" to="#">Link</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link text-success" to="datalist">Data</Link>
+              </li>
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><Link className="dropdown-item" to="#">Action</Link></li>
+                  <li><Link className="dropdown-item" to="apidata">Axios api</Link></li>
                   <li><Link className="dropdown-item" to="#">Another action</Link></li>
                   <li><hr className="dropdown-divider" /></li>
                   <li><Link className="dropdown-item" to="#">Something else here</Link></li>
