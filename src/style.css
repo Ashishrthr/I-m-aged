@@ -1,3 +1,7 @@
+.root
+{
+    --scsclr : #198754;
+}
 .frst
 {
     color : var(--bs-cyan);
@@ -35,3 +39,22 @@
 {
     color: green;
 }
+.logigo
+{
+    font-size: max(45vw + 100px);
+    color: var(--scsclr);
+    /* margin-left: 400px; */
+
+}
+.custom-class {
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .custom-class {
+      display: none;
+    }
+  }
+  .inputbrdr:focus{
+    box-shadow: 0 0 0 0.25rem rgba(26, 113, 72, 0.648) !important;
+    border-color: #198754;
+  }

@@ -1,41 +1,48 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.js"
-import "./Home.js"
+import React, { Fragment, useState } from 'react'
+import { GiArchaeopteryxFossil } from "react-icons/gi";
+import "../style.css"
+import { Link } from 'react-router-dom';
+
 
 function Login() {
-  return (
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content bg-warning">
-        <div class="modal-header">
-          <h5 class="modal-title text-success" id="staticBackdropLabel">Login</h5>
-          <button type="button" class="btn-close text-success" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          {/* log in form */}
-          <form>
-            <div class="mb-3 ">
-              <label for="exampleInputEmail1" class="form-label text-success">Email address</label>
-              <input type="email" class="form-control bg1" id="exampleInputEmail1" aria-describedby="emailHelp" />
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label text-success">Password</label>
-              <input type="password" class="form-control bg1 text-white" id="exampleInputPassword1" />
-            </div>
-            <Link className='regist' to="CreateAccount">Create New Account</Link>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-success">Login</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  )
+    const [a, b] = useState("hi");
+    const myfun = (d) => {
+        b(d.target.value);
+
+    }
+    return (
+        <Fragment>
+            <section className='container-fluid border-box'>
+                <div className='row'>
+                    <div className='col-md-7 custom-class'>
+                        <div className='p-3 overflow-hidden'>
+                            <GiArchaeopteryxFossil className='logigo text-success  ' />
+                        </div>
+                    </div>
+                    <div className='col-md-5 col-sm-8 col-9 mx-auto'>
+                        <div className='p-2'>
+                            <form>
+                                <div className='h1 text-center my-4' style={{ color: '#198754' }}>Login</div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label text-success">Email address</label>
+                                    <input type="text" value={a} class="form-control inputbrdr" onInput={myfun} id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleInputPassword1" class="form-label text-success">Password</label>
+                                    <input type="password" class="form-control inputbrdr" id="exampleInputPassword1" />
+                                </div>
+                                <div class="mb-5">
+                                    <Link className='text-decoration-none link-success text-hover' to="../CreateNewAccount">Create New Account</Link>
+                                </div>
+                                <button type="submit" class="btn container-fluid btn-success">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </Fragment>
+    )
 }
 
 export default Login
