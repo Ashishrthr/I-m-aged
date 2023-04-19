@@ -8,6 +8,7 @@ import Nav from "./components/Nav"
 import Login from './components/Login';
 import Datalist from './components/Datalist';
 import Axiosapi from './components/Axiosapi';
+import Axiosapishow from './components/Axiosapishow';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,8 @@ root.render(
       <Route path='login' element = {<Login/>} />
       <Route path='datalist' element = {<Datalist/>}/>
       <Route path='apidata' element = {<Axiosapi/>}/>
+      <Route path='apidata/:id' element = {<Axiosapishow/>}/>
+
 
 
     </Routes>
