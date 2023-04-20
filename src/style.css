@@ -58,4 +58,21 @@
     box-shadow: 0 0 0 0.25rem rgba(26, 113, 72, 0.648) !important;
     border-color: #198754;
   }
-  
+  .imgcptnposition
+  {
+    top: 80% !important;
+    left: 5% !important;
+    max-width: 90% !important;
+  }
+  .dynamic-ftomedium
+  {
+    font-size: clamp(10px,2vw + 2px,28px) !important;
+    text-shadow: 0 .2rem 2rem rgba(0, 0, 0, 0.586)!important;
+    color: rgba(255, 255, 255, 0.93);
+  }
+  .dynamic-ftosmall
+  {
+    font-size: clamp(5px,1vw + 1px,20px) !important;
+    text-shadow: 0 .2rem 2rem rgba(0, 0, 0, 0.586)!important;
+    color: rgba(246, 246, 246, 0.973);
+  }
