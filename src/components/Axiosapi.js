@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export function api(){
   return(
-    "https://api.unsplash.com/search/photos?query=life&per_page=30&orientation=squarish&client_id=1Kc5tj6qtFQj7B0rb5yIO4KQDQ0DT3YivyZBItn37m4"
+    "https://api.unsplash.com/search/photos?query=all&per_page=30&orientation=squarish&client_id=1Kc5tj6qtFQj7B0rb5yIO4KQDQ0DT3YivyZBItn37m4"
   )
 }
 function Axiosapi() {

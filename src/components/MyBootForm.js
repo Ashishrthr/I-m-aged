@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import { useForm } from 'react-hook-form';
 
 function MyBootForm() {
-    var a = [];
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     

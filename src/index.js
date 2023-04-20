@@ -10,6 +10,7 @@ import Datalist from './components/Datalist';
 import Axiosapi from './components/Axiosapi';
 import Axiosapishow from './components/Axiosapishow';
 import MyBootForm from './components/MyBootForm';
+import ViewChart from './components/ViewChart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +26,8 @@ root.render(
       <Route path='apidata' element = {<Axiosapi/>}/>
       <Route path='apidata/:id' element = {<Axiosapishow/>}/>
       <Route path='fillform' element = {<MyBootForm/>}/>
+      <Route path='viewchart' element = {<ViewChart/>}/>
+
 
 
 

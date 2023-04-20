@@ -29,7 +29,7 @@ function Nav() {
                   <li><Link className="dropdown-item" to="apidata">Axios api</Link></li>
                   <li><Link className="dropdown-item" to="fillform">Form </Link></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+                  <li><Link className="dropdown-item" to="viewchart">Chart</Link></li>
                 </ul>
               </li>
               <li className="nav-item">
