@@ -27,7 +27,7 @@ function Axiosapishow() {
     return (
 
 
-        <div className='container-fluid'>
+        <div className='container-xl'>
             <div className='row'>
                 <div className='position-relative col-12 ' >
                     <div className='py-2'><img src={x.full} className='w-100' alt='Img unavailable!!'/></div>
