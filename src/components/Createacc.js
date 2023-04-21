@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { GiArchaeopteryxFossil } from "react-icons/gi";
 import "../style.css"
-// import { Link } from 'react-router-dom';
+
 
 function Createacc() {
   return (
@@ -10,12 +10,12 @@ function Createacc() {
       <section className='container-fluid border-box'>
         <div className='row'>
           <div className='col-md-7 custom-class'>
-            <div className='p-3 overflow-hidden'>
+            <div className='p-3 overflow-hidden text-center'>
               <GiArchaeopteryxFossil className='logigo text-success  ' />
             </div>
           </div>
           <div className='col-md-5 col-sm-8 col-9 mx-auto'>
-            <div className='p-2'>
+            <div className='p-2  col-lg-10 col-xxl-8 mx-auto'>
               <form>
                 <div className='h1 text-center my-4' style={{ color: '#198754' }}>Create Account</div>
                 <div class="mb-3">

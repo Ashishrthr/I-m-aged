@@ -2,21 +2,19 @@ import axios from 'axios'
 import React, { Fragment, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
-export function api(){
-  return(
-    "https://api.unsplash.com/search/photos?query=all&per_page=30&orientation=squarish&client_id=1Kc5tj6qtFQj7B0rb5yIO4KQDQ0DT3YivyZBItn37m4"
-  )
-}
+export const api = "https://api.unsplash.com/search/photos?query=all&per_page=30&orientation=landscape&client_id=1Kc5tj6qtFQj7B0rb5yIO4KQDQ0DT3YivyZBItn37m4"
+  
+
 function Axiosapi() {
-  const apilink= api();
+  
   const [datav,dataf] = useState([]);
   useEffect(()=>{
-  axios.get(apilink).then((res)=>{
+  axios.get(api).then((res)=>{
     console.log(res.data.results);
     dataf(res.data.results)
 
   })
-},[apilink])
+},[])
 
   return (
     <Fragment>

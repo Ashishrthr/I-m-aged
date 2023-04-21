@@ -41,9 +41,10 @@
 }
 .logigo
 {
-    font-size: max(45vw + 100px);
+    font-size: clamp(400px,45vw + 100px,800px);
     color: var(--scsclr);
     /* margin-left: 400px; */
+   
 
 }
 .custom-class {

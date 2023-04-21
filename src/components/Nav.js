@@ -30,6 +30,8 @@ function Nav() {
                   <li><Link className="dropdown-item" to="fillform">Form </Link></li>
                   <li><hr className="dropdown-divider" /></li>
                   <li><Link className="dropdown-item" to="viewchart">Chart</Link></li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li><Link className="dropdown-item" to="lazzypg">Lazy Page</Link></li>
                 </ul>
               </li>
               <li className="nav-item">

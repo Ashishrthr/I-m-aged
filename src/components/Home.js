@@ -2,6 +2,8 @@ import React, { Fragment, useState } from 'react'
 import '../style.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
+import Datalist from './Datalist';
+// import Datalist from './Datalist';
 
 
 
@@ -27,6 +29,9 @@ function Home() {
           <legend>Change Text Color</legend>
           <input type='color' onInput={mytxtclr} />
         </fieldset>
+        <Datalist/>
+      
+
       </div>
     </Fragment>
   )

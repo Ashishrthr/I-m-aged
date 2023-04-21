@@ -13,7 +13,7 @@ function Axiosapishow() {
 
 
     useEffect(() => {
-        axios.get(api()).then((res) => {
+        axios.get(api).then((res) => {
             for (var i = 0; i < res.data.results.length; i++) {
                 if (res.data.results[i].id === id) {
                     myfun(res.data.results[i])
@@ -27,7 +27,7 @@ function Axiosapishow() {
     return (
 
 
-        <div className='container-xl'>
+        <div className='container-lg'>
             <div className='row'>
                 <div className='position-relative col-12 ' >
                     <div className='py-2'><img src={x.full} className='w-100' alt='Img unavailable!!'/></div>

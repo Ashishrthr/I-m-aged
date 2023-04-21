@@ -1,8 +1,7 @@
 import React from 'react'
-import "../imges/img2.jpg"
 import { Link } from 'react-router-dom'
 
-function Datalist() {
+function Datalist(props) {
     let b =0;
     const mydata = [
         {
