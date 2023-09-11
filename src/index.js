@@ -32,6 +32,7 @@ root.render(
       <Route path='lazzypg' element = {
       <Suspense fallback={<div>load..</div>}>
         <Lzypg/>
+        <Albel/>,
         </Suspense>}/>
 
 
