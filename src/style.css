@@ -77,3 +77,9 @@
     text-shadow: 0 .2rem 2rem rgba(0, 0, 0, 0.586)!important;
     color: rgba(246, 246, 246, 0.973);
   }
+  .block1-sub
+  {
+    height: 600px !important;
+    /* background-image: url(./imges/img1.jpg); */
+    border: 1px solid black;
+  }

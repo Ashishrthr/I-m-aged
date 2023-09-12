@@ -36,8 +36,8 @@ function Home() {
       </div> */}
       
       <div className='main w-100 '>
-        <div className='block1'>
-          <div className='px-1 container-lg block1-sub'><img src={bgimg} className='w-100' alt='img unavailable'/></div>
+        <div className='block1 container'>
+          <div className='block1-sub'><img src={bgimg}/></div>
         </div>
         <div className='block2'>
           <div></div>

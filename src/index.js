@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './components/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -11,8 +11,8 @@ import Axiosapishow from './components/Axiosapishow';
 import MyBootForm from './components/MyBootForm';
 import ViewChart from './components/ViewChart';
 import Axiosapi from './components/Axiosapi';
-// const Albel = lazy(()=>{import('./components/Datalist')});
-const Lzypg = lazy(()=>{import('./components/LazzyPage')});
+const Albel = React.lazy(()=> import('./components/Datalist'));
+const Lzypg = React.lazy(()=> import('./components/LazzyPage'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
