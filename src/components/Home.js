@@ -2,8 +2,8 @@ import React, { Fragment, useState } from 'react'
 import '../style.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
-import bgimg from "../imges/img1.jpg" 
-import Datalist from './Datalist';
+import bgimg from "../imges/img2.jpg" 
+import frstimg from "../imges/img1.jpg"
 // import Datalist from './Datalist';
 
 
@@ -37,11 +37,11 @@ function Home() {
       
       <div className='main w-100 '>
         <div className='block1 container'>
-          <div className='block1-sub'><img src={bgimg}/></div>
+          <div className='block1-sub container'><img src={bgimg}/></div>
         </div>
         <div className='block2'>
-          <div></div>
-          <div></div>
+          <div className='block2-sub1'><img src={frstimg}/></div>
+          <div className='block2-sub2'><p>Hello</p></div>
         </div>
         <div className='block3'>
         <div></div>
