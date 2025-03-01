@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { GiArchaeopteryxFossil } from "react-icons/gi";
 
-
-
 function Nav() {
+  
+  const [searchv, searchf] = useState('');
+  console.log(searchv)
   return (
+   
     <>
     <nav className="navbar navbar-expand-lg navbar-dark bg-warning">
         <div className="container-fluid">
@@ -28,6 +30,7 @@ function Nav() {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><Link className="dropdown-item" to="apidata">Axios api</Link></li>
                   <li><Link className="dropdown-item" to="fillform">Form </Link></li>
+                  <li><Link className="dropdown-item" to="Api">Api </Link></li>
                   <li><hr className="dropdown-divider" /></li>
                   <li><Link className="dropdown-item" to="viewchart">Chart</Link></li>
                   <li><hr className="dropdown-divider" /></li>
@@ -39,9 +42,13 @@ function Nav() {
               </li>
             </ul>
             <form className="d-flex">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success" type="submit">Search</button>
+            
+              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <Link to={searchv}> <button className="btn btn-outline-success" type="submit"  onInput={(a)=>{
+                searchf(a.target.value);
+                }}>Search</button></Link>
               <Link to="login" className='ms-2'><button className='btn btn-outline-success' type='button'>Login</button></Link>
+              
             </form>
           </div>
         </div>
@@ -50,4 +57,4 @@ function Nav() {
   )
 }
 
-export default Nav
+export default Nav;

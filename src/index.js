@@ -10,7 +10,7 @@ import Datalist from './components/Datalist';
 import Axiosapishow from './components/Axiosapishow';
 import MyBootForm from './components/MyBootForm';
 import ViewChart from './components/ViewChart';
-import Axiosapi from './components/Axiosapi';
+import Api from './components/Api';
 const Albel = React.lazy(()=> import('./components/Datalist'));
 const Lzypg = React.lazy(()=> import('./components/LazzyPage'));
 
@@ -25,10 +25,10 @@ root.render(
       <Route path='CreateNewAccount' element = {<Createacc/>} />
       <Route path='login' element = {<Login/>} />
       <Route path='datalist' element = {<Datalist/>}/>
-      <Route path='apidata' element = {<Axiosapi/>}/>
-      <Route path='apidata/:id' element = {<Axiosapishow/>}/>
+      <Route path='/:category/:id' element = {<Axiosapishow/>}/>
       <Route path='fillform' element = {<MyBootForm/>}/>
       <Route path='viewchart' element = {<ViewChart/>}/>
+      <Route path='/:category' element = {<Api/>}/>
       <Route path='lazzypg' element = {
       <Suspense fallback={<div>load..</div>}>
         <Lzypg/>

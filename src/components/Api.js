@@ -1,23 +1,21 @@
-import axios from 'axios'
 import React, { Fragment, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
-
-export const api = "https://api.unsplash.com/search/photos?query=all&per_page=30&orientation=landscape&client_id=1Kc5tj6qtFQj7B0rb5yIO4KQDQ0DT3YivyZBItn37m4"
-  
-
-function Axiosapi() {
-  
+import { Link, useParams } from 'react-router-dom';
+import axios from 'axios';
+function Api() {
+  let { category } = useParams();
+  let api = `https://api.unsplash.com/search/photos?query=${category}&per_page=30&orientation=landscape&client_id=1Kc5tj6qtFQj7B0rb5yIO4KQDQ0DT3YivyZBItn37m4`;
   const [datav,dataf] = useState([]);
+  
   useEffect(()=>{
+    
   axios.get(api).then((res)=>{
-    console.log(res.data.results);
     dataf(res.data.results)
-
   })
-},[])
+})
 
   return (
     <Fragment>
+      
         <div className='container-fluid'>
           <div className='row'>
             {datav.map((a)=>{
@@ -48,4 +46,4 @@ function Axiosapi() {
   )
 }
 
-export default Axiosapi
+export default Api

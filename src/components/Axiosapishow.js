@@ -2,18 +2,20 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { api } from "./Axiosapi"
+import { category } from './Home';
+
 
 function Axiosapishow() {
 
     let { id } = useParams();
+    let apishow = `https://api.unsplash.com/search/photos?query=${category}&per_page=30&orientation=landscape&client_id=1Kc5tj6qtFQj7B0rb5yIO4KQDQ0DT3YivyZBItn37m4`
     const [myvar, myfun] = useState({});
     const [x, y] = useState({});
     const [a, b] = useState({});
 
 
     useEffect(() => {
-        axios.get(api).then((res) => {
+        axios.get(apishow).then((res) => {
             for (var i = 0; i < res.data.results.length; i++) {
                 if (res.data.results[i].id === id) {
                     myfun(res.data.results[i])
@@ -22,7 +24,7 @@ function Axiosapishow() {
                 }
             }
         });
-    }, [id])
+    })
 
     return (
 
