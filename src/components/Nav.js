@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 import { GiArchaeopteryxFossil } from "react-icons/gi";
 
 function Nav() {
-  
   const [searchv, searchf] = useState('');
-  console.log(searchv)
+  const getData = () => {
+    console.log(searchv)
+  }
   return (
-   
+
     <>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-warning">
+      <nav className="navbar navbar-expand-lg navbar-dark mb-2">
         <div className="container-fluid">
           <Link className="navbar-brand text-decoration-none lh-1 ms-3 me-5 my-0 px-0 pt-0 fs-3" to=""><span className='homeicn'><GiArchaeopteryxFossil /></span></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +31,6 @@ function Nav() {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><Link className="dropdown-item" to="apidata">Axios api</Link></li>
                   <li><Link className="dropdown-item" to="fillform">Form </Link></li>
-                  <li><Link className="dropdown-item" to="Api">Api </Link></li>
                   <li><hr className="dropdown-divider" /></li>
                   <li><Link className="dropdown-item" to="viewchart">Chart</Link></li>
                   <li><hr className="dropdown-divider" /></li>
@@ -42,13 +42,14 @@ function Nav() {
               </li>
             </ul>
             <form className="d-flex">
-            
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <Link to={searchv}> <button className="btn btn-outline-success" type="submit"  onInput={(a)=>{
+
+              <input className="form-control me-2" type="search" placeholder="Search A Category" aria-label="Search" onInput={(a) => {
                 searchf(a.target.value);
-                }}>Search</button></Link>
-              <Link to="login" className='ms-2'><button className='btn btn-outline-success' type='button'>Login</button></Link>
-              
+
+              }} />
+              <Link to={searchv}> <button className="btn btn-outline-success me-2" type="submit" onClick={getData} >Search</button></Link>
+              <Link to="login"><button className='btn btn-outline-success' type='button'>Login</button></Link>
+
             </form>
           </div>
         </div>

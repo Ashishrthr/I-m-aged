@@ -4,21 +4,22 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import { Link} from 'react-router-dom';
 
-export let category;
-
 function Home() {
+
   const[cvalue, cfu]= useState('');
   const getData = ()=>{
-    category = cvalue;
+    console.log(cvalue);
   }
 
   return (
     <Fragment>
 
-      <div className='container'>
-        <div className='row d-flex justify-content-evenly'>
+      <div className='container-xxl border'>
+        <div className='row'>
             <label for="formGroupExampleInput" class="form-label text-center p-2 mb-4">Search related Images</label>
-          <div className='col-6'>
+            </div>
+        <div className='row d-flex justify-content-evenly h-4'>
+          <div className='col-7'>
             <input type="text" className="form-control"  placeholder="A category in one word.." onInput={(e)=>{
               cfu(e.target.value);
             }} />
