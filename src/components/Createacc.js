@@ -23,7 +23,7 @@ function Createacc() {
           <div className='col-md-5 col-sm-8 col-9 mx-auto'>
             <div className='p-2  col-lg-10 col-xxl-8 mx-auto'>
               <form onSubmit={handleSubmit(onSubmit)}>
-                <div className='h1 text-center my-4' style={{ color: '#198754' }}>Create Account</div>
+                <div className='h1 text-center text-success my-4'>Create Account</div>
                 <div class="mb-3">
                   <label for="exampleInputName" class="form-label text-success">Full name</label>
                   <input type="text" class="form-control" {...register("Fullname")} />

@@ -29,7 +29,7 @@ function Login() {
                     <div className='col-md-5 col-sm-9 col-10 mx-auto align-self-center align-self-xxl-start'>
                         <div className='p-2 col-lg-10 col-xxl-8 mx-auto'>
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <div className='h1 text-center my-4' style={{ color: '#198754' }}>Login</div>
+                                <div className='h1 text-center text-success my-4' >Login</div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label text-success">Email address</label>
                                     <input {...register("loginEmail")} type="text" value={a} class="form-control inputbrdr" onInput={myfun} id="exampleInputEmail1" aria-describedby="emailHelp" />

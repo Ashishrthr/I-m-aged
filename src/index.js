@@ -11,6 +11,7 @@ import Axiosapishow from './components/Axiosapishow';
 import MyBootForm from './components/MyBootForm';
 import ViewChart from './components/ViewChart';
 import Api from './components/Api';
+import './custom.scss';
 const Albel = React.lazy(()=> import('./components/Datalist'));
 const Lzypg = React.lazy(()=> import('./components/LazzyPage'));
 

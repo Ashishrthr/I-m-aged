@@ -23,7 +23,7 @@ function Api() {
             {datav.map((a)=>{
               var b;
               return(
-            <section className='col-md-4 my-2' key={a.id}>
+            <section className='col-xl-3 col-md-6 my-2' key={a.id}>
             <div className="card shadow" style={{ boxSizing: 'border-box' }} >
                             <Link to={a.id}><img src={a.urls.full} className="card-img-top p-1" alt="cvdfdsf" onClick={()=>{
                               modifyApi = [`https://api.unsplash.com/search/photos?query=${realsearch}&per_page=30&orientation=landscape&client_id=1Kc5tj6qtFQj7B0rb5yIO4KQDQ0DT3YivyZBItn37m4`];
