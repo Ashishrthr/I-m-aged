@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import { Link} from 'react-router-dom';
 import { FiSearch } from "react-icons/fi";
+import Imagesdemo from './Imagesdemo';
 
 function Home() {
 
@@ -31,6 +32,11 @@ function Home() {
             <Link to={cvalue}><button type='button' className='btn btn-success fs-5 h-100 w-100 brdradius ps-md-2 ps-1' onClick={getData}><FiSearch /></button></Link>
             
             </div>
+        </div>
+        <div className='row'>
+          <div className='co-12 border mt-7 '>
+            <Imagesdemo/>
+          </div>
         </div>
       </div>
 
