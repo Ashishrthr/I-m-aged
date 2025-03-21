@@ -143,3 +143,12 @@ background-attachment: fixed;
   outline: none !important;
   box-shadow: none !important;
 }
+.text-right{
+  text-align: right !important;
+}
+.text-left{
+  text-align: left !important;
+}
+.text-center{
+  text-align: center !important;
+}
